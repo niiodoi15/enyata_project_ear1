@@ -1,0 +1,795 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+
+@media (min-width: 678px) {
+    .top-section{
+        background-color: #029954;
+        padding-top: 20px;
+        position: relative;
+        height: 1407px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .container{
+        padding:  0 10%;
+    }
+    .logo{
+        width: 110px;
+        height: 39px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .navbar-nav{
+        display: flex;
+        gap: 52px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        color: #FFF;
+        text-align: center;
+    }
+    .header h3{
+        font-size: 130px;
+        font-weight: 700;
+        line-height: 123px;
+        letter-spacing: -0.06em;
+
+    }
+    .header p{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        width: 600px;
+        margin: auto;
+
+    }
+    .play-btns{
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+    }
+    .phone1{
+        display: none;
+    }
+    .phone2{
+        position: absolute;
+        width: 60%;
+        bottom: 0;
+        left: 16%;
+    }
+    .phone3{
+        position: absolute;
+        width: 60%;
+        bottom: 0;
+        right: 10%;
+    }
+    .phone4{
+        position: absolute;
+        width: 60%;
+        bottom: 0;
+        left: 5%;
+    }
+    .ear-section{
+        position: relative;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/assets/images/noise.png");
+    }
+    .mobile1{
+        display: none;
+    }
+    .mobile2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45%;
+    }
+    .mobile3{
+        position: absolute;
+        top: 50px;
+        left: 53px;
+        width: 15%;
+    }
+    .ear-text{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+        padding: 0px 6%;
+        top: 0;
+        padding-top: 140px;
+    }
+    .ear-section h5{
+        font-size: 72px;
+        font-weight: 500;
+        line-height: 73px;
+        letter-spacing: -0.03em;
+        color:#007640;
+        width: 50%;
+    }
+    .ear-section p{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        width: 50%;
+    }
+    .passportimg{
+        display: none;
+    }
+    .passport {
+        display: flex;
+        justify-content: space-between;
+    }
+    .pics{
+        align-items: end;
+        position: relative;
+        width: 50%;
+        height: 662px;
+        padding: 134px 0 0px 92px;
+    }
+    .picmages{
+        position: absolute;
+        align-items: end;
+        right: 0;
+    }
+    .connect-text{
+        width: 50%;
+        padding: 134px 0 92px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+    }
+    .connect-text h4{
+        font-size: 68px;
+        font-weight: 500;
+        line-height: 69px;
+        letter-spacing: -0.03em;
+
+    }
+    .connect-text p{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+
+    }
+    .connect-text .btn{
+        background: #FFBB62;
+        width: 100px;
+        height: 32px;
+        border-radius: 50px;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: -0.03em;
+
+        
+    }
+    .rotatemages{
+        transform: rotate(190deg);
+    }
+    .fans{
+        background-color: #007640;
+        padding: 130px 10% 152px 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 51px;
+    } 
+    .fans-btns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: ; */
+    }
+    .fans-btns img{
+        border: 2.5px solid #FFBB62;
+        border-radius: 50%;
+        padding: 12px;
+    }
+    .btn{
+        background: #FFBB62;
+        width: 84px;
+        height: 27px;
+        border-radius: 50px;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: -0.03em;
+    }
+    .fans-text{
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .fans-text h4{
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: -0.03em;
+    }
+    .fans-text p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+}
+
+/* @media screen and (max-width: 376px) and (min-width: 872){
+    .top-section{
+        background-color: #029954;
+        padding-top: 20px;
+        position: relative;
+        height: 1407px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .container{
+        padding:  0 6%;
+    }
+    .logo{
+        width: 110px;
+        height: 39px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .navbar-nav{
+        display: flex;
+        gap: 52px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        color: #FFF;
+        text-align: center;
+    }
+    .header h3{
+        font-size: 130px;
+        font-weight: 700;
+        line-height: 123px;
+        letter-spacing: -0.06em;
+
+    }
+    .header p{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        width: 600px;
+        margin: auto;
+
+    }
+    .play-btns{
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+    }
+    .phone1{
+        display: none;
+    }
+    .phone2{
+        position: absolute;
+        width: 60%;
+        bottom: 0;
+        left: 16%;
+    }
+    .phone3{
+        position: absolute;
+        width: 60%;
+        bottom: 0;
+        right: 10%;
+    }
+    .phone4{
+        position: absolute;
+        width: 60%;
+        bottom: 0;
+        left: 5%;
+    }
+    .ear-section{
+        position: relative;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/assets/images/noise.png");
+    }
+    .mobile1{
+        display: none;
+    }
+    .mobile2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45%;
+    }
+    .mobile3{
+        position: absolute;
+        top: 50px;
+        left: 53px;
+        width: 15%;
+    }
+    .ear-text{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+        padding: 0px 6%;
+        top: 0;
+        padding-top: 140px;
+    }
+    .ear-section h5{
+        font-size: 72px;
+        font-weight: 500;
+        line-height: 73px;
+        letter-spacing: -0.03em;
+        color:#007640;
+        width: 50%;
+    }
+    .ear-section p{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        width: 50%;
+    }
+} */
+
+@media (max-width: 380px){
+    .top-section{
+        background-color: #029954;
+        padding-top: 20px;
+        position: relative;
+        /* width: 375px; */
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .mobile2, .mobile3{
+        display: none;
+    }
+    .container{
+        padding:  0 6%;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 93px;
+    }
+    .logo{
+        width: 83px;
+        height: 30px;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        color: #FFF;
+        text-align: center;
+    }
+    .header h3{
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 100.1%;
+        letter-spacing: -2.7px;
+    }
+    .header p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+    .header img{
+        height: 70%;
+        width: 50%;
+        float: initial;
+    }
+    .play-btns{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    .play-btns a img{
+        width: 242px;
+        height: 75.392px;
+    }
+    .phone1{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 320px;
+        height: 300px;
+    }
+    .phone2{
+        display: none;
+    }
+    .phone3{
+        display: none;
+    }
+    .phone4{
+        display: none;
+    }
+    .ear-section{
+        position: relative;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/assets/images/noise.png");
+    }
+    .mobile1{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .ear-section h5{
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: -0.03em;
+        color:#007640;
+    }
+    .ear-section p{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .ear-text{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0px 6%;
+    }
+    .connect-text{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .pics{
+        display: none;
+    }
+    .passport{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 64px;
+        padding: 56px 0;
+    }
+    .passport img{
+        width: 246px;
+        height: 279px;
+        text-align: center;
+    }
+    .passport h4{
+        text-align: left;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: -0.03em;
+    }
+    .passport p{
+        text-align: left;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .fans{
+        background-color: #007640;
+        padding: 130px 6% 152px 6%;
+        display: flex;
+        flex-direction: column;
+        gap: 51px;
+    } 
+    .fans-btns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: ; */
+    }
+    .fans-btns img{
+        border: 2.5px solid #FFBB62;
+        border-radius: 50%;
+        padding: 12px;
+    }
+    .btn{
+        background: #FFBB62;
+        width: 84px;
+        height: 27px;
+        border-radius: 50px;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: -0.03em;
+    }
+    .fans-text{
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .fans-text h4{
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: -0.03em;
+    }
+    .fans-text p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    
+    .influencer{
+        padding: 72px 6% 6%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 51px;
+        height: 617px;
+    }
+    .influencer-text{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .influencer-text h4{
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: -0.03em;
+    }
+    .influencer-text p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+    .influencer img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .filter{
+        background: #202020;
+        padding: 130px 6% 152px 6%;
+        display: flex;
+        flex-direction: column;
+        gap: 51px;
+    }
+    .assurance{
+        padding: 55px 6%;
+    }
+    .assurance h4{
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: -0.03em;
+        color: #007640;
+
+    }
+    .support{
+        padding: 72px 0 40px;
+    }
+    .ease{
+        display: flex;
+        /* flex-direction: column; */
+        /* position: relative; */
+    }
+    .line{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ease span{
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 1px #000 solid;
+        background-color: #bebdbd;
+        padding: 5px;
+        display: block;
+        /* position: absolute; */
+    }
+    .ease hr{
+        width: 2px;
+        height: 125px;
+        border: 1px #bebdbd solid;
+    }
+    .support .text h5{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: -0.03em;
+    }
+    .support .text p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .ease{
+        display: flex;
+        gap: 32px;
+    }
+    .ease .text{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .getphone{
+        position: relative;
+        height: 1000px;
+    }
+    .gamephone{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 305px;
+        height: 600px;
+    }
+
+    .game{
+        position: absolute;
+        bottom: 0;
+        height: 551px;
+        background-color: #007640;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        justify-content: center;
+        align-items: center;
+    }
+    .game .text{
+        padding: 0 24px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .game .text h2{
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 49px;
+        letter-spacing: -0.03em;
+    }
+    .game .text p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .inputside{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .inputside p{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+
+    }
+    .inputside b{
+        font-family: DM Sans;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .inputgroup{
+        display: flex;
+        width: 335px;
+    }
+    input{
+        height: 56px;
+        width: 70%;
+        border: 1px solid #bebdbd;
+        padding: 20px;
+        border-radius: 10px 0 0 10px;
+    }
+    .inputgroup button{
+        width: 30%;
+        border-radius: 0 10px 10px 0;
+        background-color: #000;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0.075em;
+        border: none;
+        text-transform: uppercase;
+
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-logo img{
+        width: 96px;
+        height: 34px;
+    }
+    .social img{
+        width: 48px;
+        height: 48px;
+
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .link-header{
+        font-family: DM Sans;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    .footer-nav{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .footer-links{
+        text-decoration: none;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #121212;
+
+    }
+}
