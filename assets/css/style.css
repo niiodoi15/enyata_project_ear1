@@ -8,7 +8,7 @@ body{
     font-weight: 400;
 }
 
-@media (min-width: 678px) {
+@media (min-width: 376px) {
     .top-section{
         background-color: #029954;
         padding-top: 20px;
@@ -155,6 +155,7 @@ body{
         position: absolute;
         align-items: end;
         right: 0;
+        width: 70%;
     }
     .connect-text{
         width: 50%;
@@ -194,11 +195,17 @@ body{
     }
     .fans{
         background-color: #007640;
-        padding: 130px 10% 152px 10%;
-        display: flex;
-        flex-direction: column;
+        padding: 0 10% 0 10%;
+        display: flex;  
         gap: 51px;
     } 
+    .fans .left{
+        width: 50%;
+        padding: 142px 60px 142px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 54px;
+    }
     .fans-btns{
         display: flex;
         justify-content: space-between;
@@ -228,15 +235,28 @@ body{
         gap: 24px;
     }
     .fans-text h4{
-        font-size: 34px;
+        font-family: DM Sans;
+        font-size: 68px;
         font-weight: 500;
-        line-height: 35px;
+        line-height: 68px;
         letter-spacing: -0.03em;
     }
     .fans-text p{
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
+    }
+    .chat{
+        width: 50%;
+        background-color: #fff;
+        background-image: url("/assets/images/noise.png");
+        padding: 0 87px;
+    }
+    .chat-profile{
+        display: flex;
+        gap: 13px;
+        align-items: center;
+        background-color: #fff;
     }
 
 }
@@ -563,6 +583,9 @@ body{
         font-weight: 500;
         line-height: 24px;
     }
+    .chat{
+        display: none;
+    }
     
     .influencer{
         padding: 72px 6% 6%;
@@ -601,6 +624,7 @@ body{
         display: flex;
         flex-direction: column;
         gap: 51px;
+        background-image: url("/assets/images/Noiseblack.png");
     }
     .assurance{
         padding: 55px 6%;
